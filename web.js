@@ -17,7 +17,7 @@ if (err){
 //buffer=new Buffer(data.length);
 buffer.write(data,"utf-8");
 //console.log(buffer.toString('utf-8'));
-}):
+});
 
 
 app.get('/', function(request, response) {
