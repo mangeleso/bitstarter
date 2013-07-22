@@ -13,7 +13,7 @@ if (err){
     return console.log(err);
 
 }
-cosole.log(data); 
+console.log(data); 
 buffer.write(data,"utf-8");
 console.log(buffer.toString('utf-8');
 });
