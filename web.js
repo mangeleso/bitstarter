@@ -8,7 +8,7 @@ app.use(express.logger());
 
 
 
-fs.readSync('index.html','utf8',function(err,data){
+fs.readFileSync('index.html','utf8',function(err,data){
 if (err){
     return console.log(err);
 
