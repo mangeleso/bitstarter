@@ -1,6 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-//var buffer = new Buffer(100);
+var buffer;
 
 var app = express();
 app.use(express.logger());
@@ -14,7 +14,7 @@ if (err){
 
 }
 //console.log(data);
-var buffer=new Buffer(data.length);
+buffer=new Buffer(data.length);
 buffer.write(data,"utf-8");
 console.log(buffer.toString('utf-8'));
 });
