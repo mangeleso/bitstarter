@@ -1,7 +1,7 @@
 var express = require('express');
 var fs = require('fs');
 var buffer= new Buffer(25);
-
+var streaming;
 var app = express();
 app.use(express.logger());
 
@@ -16,12 +16,13 @@ if (err){
 //console.log(data);
 //buffer=new Buffer(data.length);
 buffer.write(data,"utf-8");
+streaming = data;
 //console.log(buffer.toString('utf-8'));
 });
 
 
 app.get('/', function(request, response) {
-  response.send(buffer.toString('utf-8'));
+  response.send(streaming);
 });
 
 
