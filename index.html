@@ -8,6 +8,16 @@
     <link type="text/css" rel ="stylesheet"
 	  href="https://twitter.github.com/bootstrap/assets/css/bootstrap.css">
     <style type="text/css">
+
+      /*Large desktop */
+      @media(min-width: 980px){
+      body {
+        padding-top: 60px;
+      }
+
+
+      }
+
       body {
       padding-top:20px;
       padding-bottom: 40px;
@@ -39,6 +49,30 @@
       </style>
     </head>
   <body>
+    <!-- Mobile-frindely navbar adapted from example --->
+    <!--http://twitter bootstrap/example/strter-template.html -->
+    <div class="navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+	<div class="container">
+	  <button type="button" class="btn btn-navbar"
+		  data-toaale="collapse" data-taraet=".nav-collapse">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	   </button>
+ 	  <a class="brand" href="#">Bitstarter</a>
+	  <div class="nav-collapse collapse">
+	    <ul class="nav">
+	      <li class="active"><a href="#">HOme</a></li>
+	      <li><a href="#about">About</a></li>
+	      <li><a href="#contact">Contact</a></li>
+	     </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</div>
+      </div>
+
+
     <div class="container">
       <div class="row navigation">
 	<div class="span2 logo">
